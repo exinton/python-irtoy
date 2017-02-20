@@ -1,5 +1,4 @@
-import remote.py
-
+import remote from remote.py
 
 
 def changePictureSize():
