@@ -1,3 +1,9 @@
+xintong's note:
+ add autorun.py for roku
+ run "sudo probemod cdc_acm" before launch in ubuntu 
+ 
+
+
 What this is
 ============
 A command-line driver/tool for the USB IR-Toy, written in python.
