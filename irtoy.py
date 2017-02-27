@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+from time import sleep
 import argparse
 from lib import irtoy, ir
 from serial import SerialTimeoutException
@@ -118,7 +118,6 @@ def main():
 			success = irtoy.transmit(toy, data)
 			if args.verbose or not success:
 				print ('Success!\n' if success else 'Failed!\n')
-			
 			irtoy.exitSampleMode(toy)
 			
 			return int(not success)
@@ -220,8 +219,7 @@ def main():
 				irtoy.exitSampleMode(toy)
 				success = all(ret)
 				if args.verbose or not success:
-					print('Success!\n' if success else 'Failed!\n')
-				
+					print('Success!\n' if success else 'Failed!\n') 
 			except ParseError as e:
 				print ('Error: cannot parse Macro\n')
 				return 1
