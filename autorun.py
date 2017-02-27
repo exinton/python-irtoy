@@ -1,29 +1,28 @@
 from remote.py import remote
+from IRhelp import remote
+import time
 
 
 def changePictureSize():
     #check the picture size
-    remote(info)
-    remote(down)
-    remote(right)
-    time.sleep(2)
-    remote(right)
-    time.sleep(2)
-    remote(right)
-    time.sleep(2)
-    remote(right)
-    time.sleep(2)
+    remote("info")
+    remote("down")
+    remote("down")
+    remote("right")
+    remote("right")
+    remote("right")
+    remote("right")
+    remote("info")
 def checkResolution():
     #check the picture resolution
-    remote(info)
-    time.sleep(2)
-    remote(info)
+    remote("ok")
+    remote("ok")
+
 
                       
 def main():
     changePictureSize()
     checkResolution()
-
 
 
 if __name__ == "__main__":
