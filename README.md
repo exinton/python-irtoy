@@ -1,6 +1,6 @@
 xintong's note:
  add autorun.py for roku
- run "sudo probemod cdc_acm" before launch in ubuntu 
+ run "sudo modprobe cdc_acm" before launch in ubuntu 
  
 
 
